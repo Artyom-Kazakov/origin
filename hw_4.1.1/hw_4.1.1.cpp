@@ -26,10 +26,11 @@ int main() {
 	}
 	out << std::endl;
 	out << n << std::endl;
-	out << arr[n - 1] << " ";
-	for (int i = 0; i < n - 1; i++) {
+	
+	for (int i = 1; i < n; i++) {
 		out << arr[i] << " ";
 	}
+	out << arr[0] << " ";
 
 	in.close();
 	out.close();
